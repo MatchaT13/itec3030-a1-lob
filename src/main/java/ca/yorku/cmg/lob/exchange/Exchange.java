@@ -73,7 +73,7 @@ public class Exchange {
 
 		// Does ask trader have position at the security sufficient for a sell?
 		if ((o instanceof Ask) && (pos < o.getQuantity())) {
-			System.err.println("Order validation: seller with ID " + o.getTrader().getID() + " not enough shares of " + o.getTicker() + ": has " + pos + " and tries to sell " + _____.getQuantity());
+			System.err.println("Order validation: seller with ID " + o.getTrader().getID() + " not enough shares of " + o.getTicker() + ": has " + pos + " and tries to sell " + o.getQuantity());
 			return (false);
 		}
 		
